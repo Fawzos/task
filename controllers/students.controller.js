@@ -10,7 +10,7 @@ exports.create = (req, res) => {
   const body = req.body;
   const result = StudentsService.calculateStudySessions({
     startingDate: body.startingDate,
-    studyWeekdays: body.studyWeekdays,
+    weekdays: body.weekdays,
     sessions: body.sessions,
   });
   res.json(result);
